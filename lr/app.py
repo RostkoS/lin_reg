@@ -13,7 +13,7 @@ with col1:
 with col2:
   d = st.slider('Diameter', 0.01 , 1.0, 0.01)
   h = st.slider('Height', 0.01 , 1.0, 0.01)
-  r = st.slider('Rings',5 , 20.0, 1)
+  r = st.slider('Rings',5 , 20, 1)
 if st.button("Predict LongestShell"):
   result = predict(np.array([[d, h, w_w, s_w, v_w, s_w1, r]]))
 st.text(result[0])
