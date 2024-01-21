@@ -16,4 +16,4 @@ with col2:
   r = st.slider('Rings',5 , 20, 1)
 if st.button("Predict LongestShell"):
   result = predict(np.array([[d, h, w_w, s_w, v_w, s_w1, r]]))
-st.text(result[0])
+  st.text(result[0])
